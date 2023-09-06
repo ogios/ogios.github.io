@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>OGIOS's website</title>
+</head>
+<body>
+<!--    <div id="app"></div>-->
+<!--    <script type="module" src="/src/home/main.js"></script>-->
+</body>
+
+<script>
+    const bases = ["home", "sign"];
+    if (bases.indexOf(location.pathname.replace("/" ,"")) !== -1){
+        window.location.href = location.origin + location.pathname + "/";
+    } else {
+        window.location.href = location.origin + "/home/";
+    }
+</script>
+</html>
