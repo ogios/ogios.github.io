@@ -1,0 +1,112 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    --tmp: #ffffff
+}
+
+body{
+    background-color: #b83b5e;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#app{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html, button, input, select, textarea{
+    font-family: "Source Code Pro","DejaVu Sans Mono","Ubuntu Mono","Anonymous Pro","Droid Sans Mono",Menlo,Monaco,Consolas,Inconsolata,Courier,monospace,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+
+.el-input__inner {
+    font-size: medium;
+    color: #dadada;
+}
+
+
+.el-input__wrapper{
+    margin: 1em;
+    background-color: #b83b5e;
+}
+
+.el-input__wrapper.is-focus{
+    box-shadow: 0 0 0 1px var(--tmp) inset;
+}
+
+
+
+#username::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 6rem;
+    background-color: black;
+    border-radius: 2px;
+    right: -30px;
+}
+
+
+.el-input{
+    --el-input-placeholder-color: #a8a8a8;
+    width: 100%;
+}
+
+.el-button{
+    display: unset;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+
+a {
+    color: #ffffff;
+    outline: none;
+    position: relative;
+    /*text-decoration: none;*/
+    transition: color .1s ease;
+}
+
+a::after {
+
+    outline: none;
+    --scale: 0;
+    content: '';
+    position: absolute;
+    /*position: relative;;*/
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 1px;
+    background: #ffffff;
+    transform: scaleX(var(--scale));
+    transition: -webkit-transform 0.15s cubic-bezier(0.1, 1, 1, 1);
+    text-decoration: none;
+}
+a:hover::after {
+    text-decoration: none;
+    --scale: 1;
+}
+
+.side-img{
+    display: none;
+    margin: auto;
+}
+
+@media screen and (min-width: 1200px){
+    .side-img{
+        display: inline-block;
+    }
+    .left{
+        float: left;
+    }
+}
+

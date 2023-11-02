@@ -1,0 +1,308 @@
+:root{
+    --bg-color: #141414;
+}
+
+/*MOST NARROW MOST NARROW MOST NARROW MOST NARROW */
+/*MOST NARROW MOST NARROW MOST NARROW MOST NARROW */
+/*MOBILE FIRST: NARROW COLUMN UP TO 449 PIXELS*/
+/*MOST NARROW MOST NARROW MOST NARROW MOST NARROW */
+/*MOST NARROW MOST NARROW MOST NARROW MOST NARROW */
+html {
+    /*filter: invert(1) hue-rotate(180deg);*/
+    /*background-color: antiquewhite;*/
+    background-color: #e4904c;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23e4e24c' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+    /*overflow: hidden;*/
+}
+.out_page:hover{
+    overflow: hidden;
+    transition: var(--el-transition-duration);
+    box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.1), 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.out_page{
+    overflow: hidden;
+    transition: var(--el-transition-duration);
+}
+
+
+
+body {
+    /*background-image: radial-gradient(transparent 1px, #e49c4c 1px);*/
+    /*background-size: 4px 4px;*/
+    /*backdrop-filter: blur(4px);*/
+    /*background-color: #FFF;*/
+    /*font-family: "Times New Roman", serif, 'Helvetica Neue',Helvetica,'PingFang SC', Arial,sans-serif;*/
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+}
+
+.serif {
+    font-family: "Times New Roman", serif, 'Helvetica Neue',Helvetica,'PingFang SC', Arial,sans-serif;
+}
+
+/*a {*/
+/*    color: black;*/
+/*    border-bottom: solid #5E4453 1px;*/
+/*    padding-bottom: 1px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+/*a:hover {*/
+/*    color: #5E4453;*/
+/*}*/
+
+.headerbox {
+    border: 2px solid black;
+    padding: 5%;
+    /*margin: 0;*/
+    /*margin: 5%;*/
+}
+/*.headerbox a {*/
+/*    color: black;*/
+/*    border: none;*/
+/*}*/
+/*.headerbox a:hover {*/
+/*    border-bottom: solid #5E4453 1px;*/
+/*    color: #5E4453;*/
+/*}*/
+/*.headerbox h1 a:hover {*/
+/*    border-bottom: none;*/
+/*}*/
+
+.logo {
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 0;
+    text-align: center;
+    /*line-height: 1;*/
+}
+
+/*.awesomeicons {*/
+/*    margin: 0 auto;*/
+/*    padding-bottom: 1em;*/
+/*    text-align: center;*/
+/*    font-size: 1.2em;*/
+/*}*/
+/*.awesomeicons a {*/
+/*    color: black;*/
+/*    border: none;*/
+/*}*/
+/*.awesomeicons a:hover {*/
+/*    border-bottom: solid #5E4453 1px;*/
+/*    color: #5E4453;*/
+/*}*/
+
+/*.box {*/
+/*    margin: 1em 5% 0 5%;*/
+/*    border-bottom: 2px solid black;*/
+/*}*/
+
+.tagline {
+    text-align: center;
+}
+
+/*.image1 {*/
+/*    display: block;*/
+/*    margin: auto;*/
+/*}*/
+/*.image2 {*/
+/*    display: block;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.about {*/
+/*    font-size: .8em;*/
+/*    margin: 0;*/
+/*}*/
+
+/*.date {*/
+/*    font-size: .8em;*/
+/*    margin: 0;*/
+/*}*/
+
+/*.fa {*/
+/*    margin: 10px;*/
+/*}*/
+
+/*.footer {*/
+/*    margin-bottom: 10em;*/
+/*}*/
+
+/*.advice img {*/
+/*    width: 100%*/
+/*}*/
+
+/*@media (prefers-color-scheme: dark) {*/
+
+/*}*/
+
+/*SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  */
+/*SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  */
+/*TABLET SIZE: STARTS AT 360 PIXELS */
+/*SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  */
+/*SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  SMALL  */
+
+/*@media screen and (min-width: 360px) {*/
+
+/*    .headerbox {*/
+/*        border: 2px solid black;*/
+/*        padding: 2em 3em;*/
+/*        margin: 3em 3em 1em 3em;*/
+/*    }*/
+
+/*    .box {*/
+/*        margin: 1em 3em 0 3em;*/
+/*    }*/
+
+/*}*/
+
+/*MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE */
+/*MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE */
+/*TABLET SIZE: STARTS AT 450 PIXELS */
+/*MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE */
+/*MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE MIDDLE */
+
+@media screen and (min-width: 450px) {
+
+    /*.image1 {*/
+    /*    float: left;*/
+    /*    margin: 1em 1em 1em 0;*/
+    /*}*/
+    /*.image2 {*/
+    /*    float: right;*/
+    /*    margin: 1em 0 1em 1em;*/
+    /*}*/
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .contain:before,
+    .contain:after{
+        display: table;
+        width: 100vh;
+        margin: 0 auto;
+    }
+    .contain:after{
+        clear: both;
+    }
+
+}
+.contain{
+    /*width: 100vh;*/
+    margin: 1em 1em;
+
+}
+.router-link{
+    outline: none;
+    margin-left: 2em;
+    /*font-weight: bold;*/
+    color: black;
+    text-decoration: none;
+    font-family: Georgia, serif;
+}
+
+/*.page h1{*/
+/*    margin: 0.5em;*/
+/*}*/
+
+.ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover {
+    background-color: #ffc384;
+    transition: 0.2s;
+}
+
+.out_page {
+    background-color: antiquewhite;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+hr {
+    border: 0;
+/*//padding-top: 2px;*/
+    width: 80%;
+    border-top: 1px solid ;
+/*//background: linear-gradient(to right, transparent, #4d2e00, transparent);*/
+}
+
+
+
+/*WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE */
+/*WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE */
+/*WIDER SCREEN SIZE: STARTS AT 780 PIXELS */
+/*WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE */
+/*WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE */
+
+@media screen and (min-width: 780px) {
+
+    .headerbox {
+        /*padding: 3em;*/
+        /*width: 50%;*/
+        margin: 1em auto;
+        border: 2px solid black;
+        padding: 5%;
+        /*margin: 0;*/
+    }
+
+    .logo {
+        float: left;
+        font-size: 3em;
+        font-weight: 400;
+        line-height: .9;
+        margin: 0;
+        width: 50%;
+    }
+
+    .tagline {
+        float: right;
+        margin: 0;
+        width: 50%;
+    }
+
+    .contain{
+        width: 70vw;
+        /*width: 100%;*/
+        margin: 1em auto;
+    }
+
+    .router-link{
+        outline: none;
+        margin-left: 2em;
+        font-weight: 400;
+        color: black;
+        text-decoration: none;
+    }
+
+    .page{
+        margin-bottom: 1em;
+        /*padding: 1em;*/
+    }
+
+
+
+    /*.box {*/
+    /*    margin: 0 auto;*/
+    /*    width: 50%;*/
+    /*}*/
+
+    /*.parallax-advice {*/
+    /*    width: 50%;*/
+    /*}*/
+
+}

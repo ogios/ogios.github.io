@@ -1,0 +1,130 @@
+.ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+    position: static;
+    margin-top: unset;
+    right: unset;
+    top: unset;
+    width: 18px;
+    justify-content: center;
+}
+
+.ql-snow .ql-picker.ql-size {
+     width: fit-content;
+}
+
+.ql-snow .ql-picker.ql-font {
+    width: fit-content;
+}
+
+.ql-snow .ql-picker {
+    margin-right: 5px;
+}
+
+.ql-stroke{
+    stroke: black;
+}
+
+.ql-snow.ql-toolbar button.ql-active .ql-stroke, .ql-snow .ql-toolbar button.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter{
+    stroke: black;
+}
+
+.ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-stroke{
+    stroke: #b83b5e;
+}
+
+.ql-snow.ql-toolbar button.ql-active .ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill{
+    fill: black;
+}
+
+.ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected{
+    background-color: #f3cfa0;
+    color: #5e5044;
+}
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+    border-color: #b83b5e !important;
+}
+
+.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+    color: #b83b5e;
+}
+
+.ql-editor{
+    min-height: 500px;
+}
+
+/* Set dropdown font-families */
+
+#toolbar-container .ql-font span[data-label="Sans Serif"]::before {
+    font-family: 'Sans Serif', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="思源宋体"]::before{
+    font-family: 'Source Han Serif SC VF', serif;
+}
+
+#toolbar-container .ql-font span[data-label="Lora"]::before{
+    font-family: 'Lora', serif ;
+}
+
+#toolbar-container .ql-font span[data-label="Georgia"]::before{
+    font-family: 'Georgia', serif ;
+}
+
+#toolbar-container .ql-font span[data-label="Times New Roman"]::before{
+    font-family: 'Times New Roman', serif;
+}
+
+/* Set content font-families */
+.ql-font-Source-Han-Serif-SC-VF{
+    font-family: 'Source Han Serif SC VF', serif;
+}
+
+.ql-font-Times-New-Roman{
+    font-family: "Times New Roman",serif;
+}
+
+.ql-font-Lora{
+    font-family: Lora,serif;
+}
+
+.ql-font-Georgia{
+    font-family: Georgia,serif;
+}
+
+.ql-snow .ql-editor pre.ql-syntax {
+    background-color: #21222d;
+}
+
+
+
+.ql-container{
+    /*font-size: 12px;*/
+    font-size: 14px;
+
+}
+
+.ql-syntax{
+    font-family: "Source Code Pro","DejaVu Sans Mono","Ubuntu Mono","Anonymous Pro","Droid Sans Mono",Menlo,Monaco,Consolas,Inconsolata,Courier,monospace,"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size: 14px;
+}
+
+
+
+.ql-container.ql-snow {
+    border: 1px solid #000000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ql-toolbar.ql-snow {
+    border: 1px solid #000000;
+    border-bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@media screen and (min-width: 780px) {
+    .ql-container{
+        font-size: 16px;
+    }
+}
