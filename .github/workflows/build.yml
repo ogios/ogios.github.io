@@ -47,18 +47,18 @@ jobs:
       - id: ssh-ogios
         uses: invi5H/ssh-action@v1
         with:
-          NAME: ssh-ogios.github.com
+          NAME: github.com
           SSH_HOST: ogios.github.com
           SSH_USER: ogios
           SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - id: ssh-normal
-        uses: invi5H/ssh-action@v1
-        with:
-          NAME: ssh-github.com
-          SSH_HOST: github.com
-          SSH_USER: ogios
-          SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      # - id: ssh-normal
+      #   uses: invi5H/ssh-action@v1
+      #   with:
+      #     NAME: github.com
+      #     SSH_HOST: github.com
+      #     SSH_USER: ogios
+      #     SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@v3
