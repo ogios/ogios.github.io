@@ -38,18 +38,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup SSH
-        uses: MrSquaare/ssh-setup-action@v3
-        with:
-          host: github.com
-          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      # - name: Setup SSH
+      #   uses: MrSquaare/ssh-setup-action@v3
+      #   with:
+      #     host: github.com
+      #     private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Setup SSH
-        uses: MrSquaare/ssh-setup-action@v3
+      - name: SSH config for github.com
+        uses: shimataro/ssh-key-action@v2
         with:
-          host: ogios.github.com
-          hostname: github.com
-          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_ed25519
+          # known_hosts: ${{ secrets.KNOWN_HOSTS_OF_BASTION }}
+          config: |
+            Host github.com
+              HostName github.com
+              User ogios
+              IdentityFile ~/.ssh/id_ed25519
+
+      - name: SSH config for ogios.github.com
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_ed25519
+          # known_hosts: ${{ secrets.KNOWN_HOSTS_OF_BASTION }}
+          config: |
+            Host ogios.github.com
+              HostName github.com
+              User ogios
+              IdentityFile ~/.ssh/id_ed25519
 
       # - id: ssh-ogios
       #   uses: invi5H/ssh-action@v1
