@@ -49,7 +49,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_ed25519
-          known_hosts: ''
+          known_hosts: 'none'
           config: |
             Host github.com
               HostName github.com
@@ -61,7 +61,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_ed25519
-          known_hosts: ''
+          known_hosts: 'none'
           config: |
             Host ogios.github.com
               HostName github.com
