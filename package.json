@@ -6,7 +6,8 @@
     "dev": "bunx --bun vite --force",
     "build": "bunx --bun vite build",
     "preview": "bunx --bun vite preview",
-    "build:packs": "./scripts/build_packs.sh"
+    "build:packs": "./scripts/build_packs.sh",
+    "build:all": "bun run build && bun run build:packs"
   },
   "dependencies": {
     "vue": "^3.3.2",
