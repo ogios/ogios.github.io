@@ -70,22 +70,6 @@ jobs:
               User ogios
               IdentityFile ~/.ssh/id_ed25519
 
-      # - id: ssh-ogios
-      #   uses: invi5H/ssh-action@v1
-      #   with:
-      #     NAME: github.com
-      #     SSH_HOST: ogios.github.com
-      #     SSH_USER: ogios
-      #     SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      # - id: ssh-normal
-      #   uses: invi5H/ssh-action@v1
-      #   with:
-      #     NAME: github.com
-      #     SSH_HOST: github.com
-      #     SSH_USER: ogios
-      #     SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -100,11 +84,13 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./dist/
           destination: ./_site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
