@@ -1,3 +1,0 @@
-[submodule "projects/json-schema-editor"]
-	path = projects/json-schema-editor
-	url = git@ogios.github.com:ogios/JSONSchemaStruct.git
