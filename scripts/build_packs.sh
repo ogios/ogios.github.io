@@ -23,7 +23,6 @@ for project in "${projects[@]}"; do
 	echo copy "$project"
 	cp ./"$project_path"/dist/"$project_path"/assets ./dist/"$project_path" -r
 	cp ./"$project_path"/dist/index.html ./dist/"$project_path"/index.html
-	cp ./"$project_path"/dist/index.html ./dist/"$project_path"/404.html
 done
 
 echo "done"
