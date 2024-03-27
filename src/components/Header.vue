@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup lang="ts">
+import { routes } from '@/routers'
+</script>
 
 <template>
   <section class="serif" style="overflow: hidden">
@@ -7,8 +9,7 @@
       <p class="tagline"><br />personal website.</p>
     </header>
     <div style="margin-top: 1em; margin: 0.5em; margin-bottom: 1em">
-      <router-link :to="{ name: 'home' }" class="router-link">Home</router-link>
-      <RouterLink class="router-link" to="/projects">Projects</RouterLink>
+      <router-link v-for="r in routes" :to="r.path" class="router-link">{{ r.meta.title }}</router-link>
     </div>
     <hr />
   </section>

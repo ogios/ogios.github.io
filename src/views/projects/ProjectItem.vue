@@ -17,8 +17,3 @@ function goto() {
     </p>
   </div>
 </template>
-
-<style scoped>
-.con:hover {
-}
-</style>

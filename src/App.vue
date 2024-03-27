@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import HeaderNav from '@/components/Header.vue'
-import PageSection from '@/views/PageSection.vue'
-import HomeBottom from '@/views/HomeBottom.vue'
+import PageSection from '@/components/PageSection.vue'
+import HomeBottom from '@/views/root/HomeBottom.vue'
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ProjectItem from '@/views/ProjectItem.vue'
-import PageSection from '@/views/PageSection.vue'
+import ProjectItem from '@/views/projects/ProjectItem.vue'
+import PageSection from '@/components/PageSection.vue'
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import Tail from '@/components/Tail.vue'
-import PageSection from '@/views/PageSection.vue'
+import PageSection from '@/components/PageSection.vue'
 </script>
 
 <template>
