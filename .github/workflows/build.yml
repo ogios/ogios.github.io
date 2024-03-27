@@ -101,6 +101,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ogios
           directory: ./dist/
+          branch: production
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
