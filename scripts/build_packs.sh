@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo updating submodules
-git submodule update --remote --recursive --init
-
 get_projects() {
 	local subfolders=("$(ls "$1")")
 	echo "${subfolders[@]}"
