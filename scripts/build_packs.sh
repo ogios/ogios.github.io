@@ -8,7 +8,7 @@ get_projects() {
 base="projects"
 projects=$(get_projects $base/)
 mkdir ./dist/$base -p
-echo build submodules
+echo build projects...
 for project in "${projects[@]}"; do
 	echo "$project"
 	project_path=$base/$project
@@ -23,3 +23,6 @@ for project in "${projects[@]}"; do
 done
 
 echo "done"
+
+echo build public/blogs...
+./scripts/build_submodule.sh ./dist/blogs
