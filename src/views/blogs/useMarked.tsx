@@ -65,7 +65,7 @@ const exts = [
     langPrefix: 'hljs language-',
     highlight(code, lang, _) {
       const language = hljs.getLanguage(lang) ? lang : 'plaintext'
-      console.log(lang, language)
+      // console.log(lang, language)
       return hljs.highlight(code, { language }).value
     },
   }),
@@ -99,7 +99,7 @@ for (let i = 0; i < exts.length; i++) {
   try {
     marked.use(e)
   } catch (e) {
-    console.log(i)
+    console.error(i)
   }
 }
 export default marked

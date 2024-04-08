@@ -1,4 +1,4 @@
-const base = '/blogs'
+const base = import.meta.env.VITE_BLOG_PATH
 
 export async function apiGetBlogList(): Promise<BlogAPI.BlogListItem[]> {
   const res = await fetch(`${base}/meta.json`, { method: 'GET' })
