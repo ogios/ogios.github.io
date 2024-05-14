@@ -2,6 +2,17 @@
 import Tail from "@/components/Tail.vue";
 import PageSection from "@/components/PageSection.vue";
 import HomeBottom from "@/components/root/HomeBottom.vue";
+
+useHead({
+  title: "Archive",
+  meta: [
+    {
+      name: "description",
+      content: "Home page of the site",
+    },
+  ],
+  titleTemplate: "OGIOS's Blog - %s",
+});
 </script>
 
 <template>

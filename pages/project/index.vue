@@ -1,5 +1,17 @@
 <script setup lang="ts">
 import ProjectItem from "@/components/project/ProjectItem.vue";
+
+useHead({
+  title: "Archive",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Here you will find some of the frontend projects I have written.",
+    },
+  ],
+  titleTemplate: "OGIOS's Blog - %s",
+});
 </script>
 
 <template>
