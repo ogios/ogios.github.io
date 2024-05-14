@@ -93,6 +93,8 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./dist
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
