@@ -9,6 +9,7 @@
     <div style="margin-top: 1em; margin: 0.5em; margin-bottom: 1em">
       <NuxtLink class="router-link" to="/">home</NuxtLink>
       <NuxtLink class="router-link" to="/blogs">blogs</NuxtLink>
+      <NuxtLink class="router-link" to="/project">projects</NuxtLink>
     </div>
     <hr />
   </section>
