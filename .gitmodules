@@ -1,3 +1,6 @@
 [submodule "blogs"]
 	path = content/blogs
 	url = git@github.com:ogios/blogs.git
+[submodule "projects/JSONSchemaStruct"]
+	path = projects/JSONSchemaStruct
+	url = git@github.com:ogios/JSONSchemaStruct.git
