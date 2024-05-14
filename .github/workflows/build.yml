@@ -10,7 +10,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     tags:
-      - '*'
+      - "*"
   repository_dispatch:
     types:
       - build
@@ -27,7 +27,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -49,8 +49,8 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_ed25519
-          known_hosts: 'none'
-          if_key_exists: 'ignore'
+          known_hosts: "none"
+          if_key_exists: "ignore"
           config: |
             Host github.com
               HostName github.com
@@ -62,8 +62,8 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_ed25519
-          known_hosts: 'none'
-          if_key_exists: 'ignore'
+          known_hosts: "none"
+          if_key_exists: "ignore"
           config: |
             Host ogios.github.com
               HostName github.com
@@ -85,11 +85,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./dist/
-          destination: ./_site
+      # - name: Build with Jekyll
+      #   uses: actions/jekyll-build-pages@v1
+      #   with:
+      #     source: ./dist/
+      #     destination: ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
@@ -106,8 +106,8 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
-          publish-dir: './dist'
-          deploy-message: 'Deploy from GitHub Actions'
+          publish-dir: "./dist"
+          deploy-message: "Deploy from GitHub Actions"
           production-branch: main
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
