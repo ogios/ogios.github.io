@@ -88,7 +88,6 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          # source: ./dist/
           source: ./.output/public
           destination: ./_site
 
@@ -101,13 +100,13 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ogios
-          directory: ./dist/
+          directory: ./.output/public
           branch: main
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
-          publish-dir: "./dist"
+          publish-dir: ./.output/public
           deploy-message: "Deploy from GitHub Actions"
           production-branch: main
         env:
