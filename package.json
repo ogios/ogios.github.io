@@ -4,11 +4,15 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "b": "nuxt build --preset github_pages",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "sync": "./scripts/sync.sh",
+    "b": "nuxt build --preset github_pages",
+    "b:blog": "./scripts/build_blog.sh",
+    "b:packs": "./scripts/build_packs.sh",
+    "build:all": "bun run sync && bun run b:blog && bun run b && bun run b:packs"
   },
   "dependencies": {
     "@nuxt/content": "^2.12.1",
