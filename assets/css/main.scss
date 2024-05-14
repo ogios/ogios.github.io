@@ -1,0 +1,17 @@
+.out_page {
+  background-color: antiquewhite;
+  transition: all 0.2s;
+  @apply my-1em overflow-hidden;
+  @apply hover:drop-shadow-xl;
+}
+
+.contain {
+  margin: 0 auto;
+  @apply w-full sm:w-70vw sm:m-1em-auto;
+}
+
+hr {
+  border: 0;
+  width: 80%;
+  border-top: 1px solid;
+}

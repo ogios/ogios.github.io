@@ -1,0 +1,74 @@
+:root {
+  --bg-color: #141414;
+}
+
+html {
+  /*filter: invert(1) hue-rotate(180deg);*/
+  /*background-color: antiquewhite;*/
+  font-size: 14px;
+  background-color: #e4904c;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23e4e24c' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+  /*overflow: hidden;*/
+}
+
+body {
+  /*background-image: radial-gradient(transparent 1px, #e49c4c 1px);*/
+  /*background-size: 4px 4px;*/
+  /*backdrop-filter: blur(4px);*/
+  /*background-color: #FFF;*/
+  /*font-family: "Times New Roman", serif, 'Helvetica Neue',Helvetica,'PingFang SC', Arial,sans-serif;*/
+  font-family:
+    JetBrainsMono,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "PingFang SC",
+    "Microsoft YaHei",
+    "Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "WenQuanYi Micro Hei",
+    sans-serif,
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  line-height: 1.5;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+}
+
+@media screen and (min-width: 450px) {
+  .clearfix:before,
+  .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .contain:before,
+  .contain:after {
+    display: table;
+    width: 100vh;
+    margin: 0 auto;
+  }
+  .contain:after {
+    clear: both;
+  }
+}
+
+/* @media screen and (min-width: 780px) { */
+/* } */
