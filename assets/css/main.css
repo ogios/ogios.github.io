@@ -43,6 +43,7 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
+  text-rendering: optimizeLegibility;
   line-height: 1.5;
   font-feature-settings: normal;
   font-variation-settings: normal;

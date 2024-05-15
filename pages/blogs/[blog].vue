@@ -86,4 +86,29 @@ const md = await markd.parse(articles.value.body);
   </PageSection>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.markdown-body {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times,
+    serif, "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "WenQuanYi Micro Hei", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 17px;
+}
+:deep(.markdown-body pre),
+:deep(.markdown-body tt),
+:deep(.markdown-body code),
+:deep(.markdown-body samp) {
+  font-family:
+    JetBrainsMono,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "PingFang SC",
+    "Microsoft YaHei",
+    "Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "WenQuanYi Micro Hei",
+    sans-serif !important;
+  font-size: 88% !important;
+}
+</style>
