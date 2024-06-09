@@ -90,7 +90,7 @@ const md = await markd.parse(articles.value.body);
 .markdown-body {
   font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times,
     serif, "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC",
-    "WenQuanYi Micro Hei", sans-serif;
+    "WenQuanYi Micro Hei", sans-serif, JetBrainsMono;
   letter-spacing: 0.03em;
   font-size: 17px;
 }
