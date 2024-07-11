@@ -35,8 +35,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+
 
       # - name: Setup SSH
       #   uses: MrSquaare/ssh-setup-action@v3
@@ -70,10 +69,13 @@ jobs:
               User ogios
               IdentityFile ~/.ssh/id_ed25519
 
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - uses: oven-sh/setup-bun@v1
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
@@ -82,17 +84,10 @@ jobs:
           bun i
           bun run build:all
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./.output/public
-          destination: ./_site
-
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.output/public
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -124,4 +119,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
