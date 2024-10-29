@@ -17,7 +17,10 @@ useHead({
 <template>
   <PageSection>
     <ProjectItem url="/projects/json-schema-editor" title="JSONSchema Editor" />
-    <ProjectItem url="/projects" title="Waiting for more..." />
+    <ProjectItem
+      url="https://way-edges.github.io/description"
+      title="Way-Edges"
+    />
   </PageSection>
 </template>
 
