@@ -93,8 +93,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./.output/public --project-name=ogios
-          branch: main
+          command: pages deploy ./.output/public --project-name=ogios --branch main
 
       - name: Deploy to Netlify
         continue-on-error: true
