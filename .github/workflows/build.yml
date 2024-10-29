@@ -89,12 +89,11 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         continue-on-error: true
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ogios
-          directory: ./.output/public
+          command: pages deploy ./.output/public --project-name=ogios
           branch: main
 
       - name: Deploy to Netlify
